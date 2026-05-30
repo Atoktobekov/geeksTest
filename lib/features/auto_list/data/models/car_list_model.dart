@@ -7,13 +7,6 @@ class CarListModel {
   CarListModel({required this.carsList});
 
   factory CarListModel.fromJson(List<dynamic> json) {
-    final carsList = <CarEntity>[];
-    for (final car in json) {
-      carsList.add(CarEntity(
-        name: car['name'],
-        year: car['year'],
-        image: car['image'],
-      );
+      
     }
   }
-}
